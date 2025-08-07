@@ -23,8 +23,6 @@ services:
       - "8000:8000"
     depends_on:
       - db
-    environment:
-      DATABASE_URL: postgresql+asyncpg://postgres:root@db:5431/py-fast-todo
 
 volumes:
   postgres_data:
